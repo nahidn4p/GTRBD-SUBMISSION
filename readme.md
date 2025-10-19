@@ -13,7 +13,7 @@ A Python-based algorithmic trading system that implements the Golden Cross strat
   - Executes buy/sell decisions based on Golden Cross (buy) and Death Cross (sell) signals.
   - Tracks and reports trading performance (profit/loss, ROI).
 - **Tech Stack**: Python, yfinance, pandas.
-- **Detailed Documentation**: See [AlgoTrader_README.md](https://github.com/nahidn4p/GTRBD-SUBMISSION/blob/main/Algo-Trader/readme.md) for setup and usage instructions.
+- **Detailed Documentation**: See [README.md](https://github.com/nahidn4p/GTRBD-SUBMISSION/blob/main/Algo-Trader/readme.md) for setup and usage instructions.
 
 ### 2. Samsung Phone Advisor
 A FastAPI-based application that scrapes Samsung phone specifications from GSMArena, stores them in a PostgreSQL database, and provides an API to answer user queries about phone comparisons or specifications. It supports natural-language queries like "Compare Samsung Galaxy M36 and F56" or "Best battery under $1000".
@@ -24,14 +24,14 @@ A FastAPI-based application that scrapes Samsung phone specifications from GSMAr
   - Handles comparison queries and filtered searches via a FastAPI endpoint.
   - Uses regex for robust parsing of phone models and specifications.
 - **Tech Stack**: Python, FastAPI, PostgreSQL, BeautifulSoup, Requests.
-- **Detailed Documentation**: See [README.md](README.md) for setup, usage, and troubleshooting instructions.
+- **Detailed Documentation**: See [README.md](https://github.com/nahidn4p/GTRBD-SUBMISSION/blob/main/Samsung-Phone-Advisor/readme.md) for setup, usage, and troubleshooting instructions.
 
 
 
 ## Getting Started
 Each project is independent and can be set up separately. Refer to the individual README files for specific installation steps, prerequisites, and usage examples:
-- For **Samsung Phone Advisor**, follow the instructions in [README.md](README.md).
-- For **AlgoTrader**, follow the instructions in [AlgoTrader_README.md](AlgoTrader_README.md).
+- For **Samsung Phone Advisor**, follow the instructions in [README.md](https://github.com/nahidn4p/GTRBD-SUBMISSION/blob/main/Samsung-Phone-Advisor/readme.md).
+- For **AlgoTrader**, follow the instructions in [README.md]([AlgoTrader_README.md](https://github.com/nahidn4p/GTRBD-SUBMISSION/blob/main/Algo-Trader/readme.md)).
 
 ## Repository Structure
 ```
