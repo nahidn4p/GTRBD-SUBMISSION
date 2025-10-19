@@ -41,10 +41,10 @@ Each project is independent and can be set up separately. Refer to the individua
 ├── samsung_phone_advisor/   # Samsung Phone Advisor source code
 │   ├── app.py
 │   ├── requirements.txt
-|   |── models.py
 │   └── readme.md
 ├── algo_trader/             # AlgoTrader source code
 │   ├── algo_trader.py
 │   ├── requirements.txt
+|   |── models.py
 │   └── readme.md
 ```
