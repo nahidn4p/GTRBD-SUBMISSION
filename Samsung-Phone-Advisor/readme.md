@@ -11,16 +11,18 @@ A FastAPI-based application that scrapes Samsung phone specifications from GSMAr
 
 ## System Architecture
 
+```mermaid
 graph TD
     A[User] -->|POST /ask| B(FastAPI Server)
     B -->|Parse Query| C[Data Extractor]
     C -->|Regex: M36, F56| D{Extracted Models}
-    D -->|SQL Query| E[PostgreSQL<br>samsung_phone_advisor]
+    D -->|SQL Query| E[PostgreSQL samsung_phone_advisor]
     E -->|Return Specs| F[Phone Data]
     F -->|Compare| G[Review Generator]
     G -->|Format Answer| H[JSON Response]
-    I[Scraper<br>python app.py --scrape] -->|Fetch| J[GSMArena<br>List & Detail Pages]
+    I[Scraper python app.py --scrape] -->|Fetch| J[GSMArena List & Detail Pages]
     J -->|Parse & Store| E
+```
 
 
 
