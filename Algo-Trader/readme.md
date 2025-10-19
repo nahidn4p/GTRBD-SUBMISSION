@@ -17,23 +17,23 @@ This project implements a simple algorithmic trading strategy based on the Golde
 
 ```mermaid
 graph TD
-    A[Start] --> B[Initialize AlgoTrader<br>symbol, from_date, to_date, budget]
-    B --> C[download_data]<br>Fetch stock data from yfinance
-    C --> D[clean_data]<br>Remove duplicates, forward-fill NaNs
-    D --> E[calculate_moving_averages]<br>Compute MA50, MA200
-    E --> F[apply_strategy]<br>Loop through data
+    A[Start] --> B[Initialize AlgoTrader\nsymbol, from_date, to_date, budget]
+    B --> C[download_data\nFetch stock data from yfinance]
+    C --> D[clean_data\nRemove duplicates, forward-fill NaNs]
+    D --> E[calculate_moving_averages\nCompute MA50, MA200]
+    E --> F[apply_strategy\nLoop through data]
     F -->|For each day| G{MA50 crosses MA200?}
-    G -->|MA50 > MA200<br>Golden Cross| H{No position?}
-    H -->|Yes| I[buy_stock]<br>Buy shares with available cash
-    G -->|MA50 < MA200<br>Death Cross| J{Holding position?}
-    J -->|Yes| K[sell_stock]<br>Sell shares, update profit
+    G -->|MA50 > MA200\nGolden Cross| H{No position?}
+    H -->|Yes| I[buy_stock\nBuy shares with available cash]
+    G -->|MA50 < MA200\nDeath Cross| J{Holding position?}
+    J -->|Yes| K[sell_stock\nSell shares, update profit]
     I --> L[Next Day]
     K --> L
     J -->|No| L
     H -->|No| L
     L -->|End of data| M{Holding position?}
-    M -->|Yes| N[sell_stock]<br>Force close position
-    N --> O[evaluate_performance]<br>Print final report
+    M -->|Yes| N[sell_stock\nForce close position]
+    N --> O[evaluate_performance\nPrint final report]
     M -->|No| O
     O --> P[End]
 ```
