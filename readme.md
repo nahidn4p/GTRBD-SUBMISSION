@@ -36,13 +36,11 @@ Each project is independent and can be set up separately. Refer to the individua
 ## Repository Structure
 ```
 ├── README.md                # Samsung Phone Advisor README
-├── AlgoTrader_README.md     # AlgoTrader README
-├── CORE_README.md           # This core documentation
-├── samsung_phone_advisor/   # Samsung Phone Advisor source code
+├── Samsung-Phone-Advisor/   # Samsung Phone Advisor source code
 │   ├── app.py
 │   ├── requirements.txt
 │   └── readme.md
-├── algo_trader/             # AlgoTrader source code
+├── Algo-Trader/             # AlgoTrader source code
 │   ├── algo_trader.py
 │   ├── requirements.txt
 |   |── models.py
